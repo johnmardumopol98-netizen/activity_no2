@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 1. <head> and Style Guide Basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon of website -->
+    <link rel="icon" type="C:\Users\SMCC\Downloads" href="C:\Users\SMCC\Downloads\smcc.png">
+    <title>SMCC WEBSITE</title>
+
+    <!-- Internal CSS (layout, classes, responsiveness) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fb;
+            color: #222;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, nav, section, article, aside, footer {
+            padding: 15px 20px;
+        }
+
+        header {
+            background-color: #004b8d;
+            color: #fff;
+        }
+
+        img {
+            display: block;          /* allows centering */
+            margin: 0 auto;          /* centers the image */
+            width: 500px;            /* adjust size (normal size) */
+            height: auto;            /* keeps aspect ratio */
+            border-radius: 20px;     /* optional – keeps your rounded corners */
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 500px;
+            height: auto;
+        }
+        table, th, td {            
+            border: 1px solid black;
+            border-collapse: collapse; /* Collapses borders for a cleaner look */
+        }
+        th, td {
+            padding: 8px; /* Adds spacing inside cells */
+            text-align: left; /* Aligns text to the left in cells */
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav {
+            background-color: #e1e8f0;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #004b8d;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-section {
+            flex: 3 1 250px;
+        }
+
+        .sidebar {
+            flex: 1 1 200px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 15px 20px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .code-block {
+            background-color: #222;
+            color: #e8e8e8;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        button.primary-btn {
+            background-color: #004b8d;
+            color: #ffffff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button.primary-btn:hover {
+            background-color: #0065c3;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #004b8d;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #006600;
+        }
+
+        /* Responsive layout using media query */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+                margin-bottom: 6px;
+            }
+        }
+    </style>
+
+    <script>
+    // Simple JavaScript interactivity for the button
+    function toggleMessage() {
+        const msg = document.getElementById("info-message");
+        if (msg.style.display === "block") {
+            msg.style.display = "none";
+        } else {
+            msg.style.display = "block";
+        }
+    }
+    </script>
+</head>
+    <body id="page-root">
+        <div class="wrapper">
+    
+            <!-- Semantic header with ID and class -->
+            <header id="top-header" class="section-header">
+                <h1>SAINT MICHAEL COLLEGE OF CARAGA</h1>
+                <p>WELCOME TO SAINT MICHAEL COLLEGE OF CARAGA (SMCC) &#128525;</p>
+            </header>
+    
+            <!-- Semantic navigation -->
+            <nav>
+                <a href="#layout">HOME</a>
+                <a href="#location">LOCATION</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#symbols">Symbols & Emojis</a>
+                <a href="#xhtml">EXAMPLE OF XHTML</a>
+            </nav>
+    
+            <!-- MAIN LAYOUT AREA -->
+            <div class="container">
+    
+                <!-- Main content using section/article and divs with classes -->
+                <section class="main-section">
+    
+                    <!-- Layout / Div / Classes / IDs / Buttons / JS -->
+                    <article id="layout" class="card">
+                        <h2><strong>VISION</strong></h2>
+    
+                        <div class="info-box">
+                            <p>
+                                Saint Micheal College of Caraga Envision to be a University by 2035 and Upholds Spiritual Formation and Excellence in Teaching, Service, and Research. &#127979;
+                            </p>
+                        </div>
+    
+                        <!-- Button + JavaScript Interactivity -->
+                        <button class="primary-btn" onclick="toggleMessage()">Push me</button>
+    
+                        <p id="info-message" class="hidden-message">
+                            Come be a Michealinian!!! &#129303;
+                        </p>
+                    </article>
+
+                    <article id="layout" class="card">
+                        <h2><strong>MISSION</strong></h2>
+                        <div>
+                            <p>
+                                <ul>
+                                    <li>SMCC shall provide spitual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leader.</li>
+                                    <li>SMCC shall engage in dyanamic, innovative, and interdisciplinary research to advance and achieve institutional initiatives.</li>
+                                    <li>SMCC shall commit to serve the diverse and local communities by fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article id="layout" class="card">
+                        <h2><strong>GOALS</strong></h2>
+                        <div>
+                            <p>
+                                Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus produce Graduates that are Globally Competent, Spiritually Embodied, and Socially Responsible.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article id="layout" class="card">
+                        <h2><strong>School Presidents of Saint Michael College of Caraga</strong></h2>
+                        <aside>
+                            <table>
+                                <tr>
+                                  <th>NAME</th>
+                                  <th>YEAR</th>
+                                </tr>
+                                <tr>
+                                  <td>Rev. Fr. Francisco Van Dyke, MSC</td>
+                                  <td>1948–1951</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Gerard Cruijsen, MSC</td>
+                                    <td>1952–1957</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Geraldo Blewanus, MSC</td>
+                                    <td>1958–1961</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Enrique Van Ma-anen, MSC</td>
+                                    <td>1963–1965</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Venancio Portillo, MSC</td>
+                                    <td>1965</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Mateo Van Santvoord, MSC</td>
+                                    <td>1965-1967</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Anthony Krol, MSC</td>
+                                    <td>1967–1974</td>
+                                </tr>
+                                <tr>
+                                    <td>Gregorio E. Orais</td>
+                                    <td>1975–19777</td>
+                                </tr>
+                                <tr>
+                                    <td>Antonio L. Suarez</td>
+                                    <td>1977–1978</td>
+                                </tr>
+                                <tr>
+                                    <td>Faro Gatchalian</td>
+                                    <td>1978–1985</td>
+                                </tr>
+                                <tr>
+                                    <td>Necita R. Lim</td>
+                                    <td>1985–1991</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Achilles Ayaton</td>
+                                    <td>1991–1993</td>
+                                </tr>
+                                <tr>
+                                    <td>Msgr. Cesar L. Gatela</td>
+                                    <td>1994–1999</td>
+                                </tr>
+                                <tr>
+                                    <td>Msgr. Bienvinido A. Betaizar, PC</td>
+                                    <td>1999–2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Rev. Fr. Ronniel G. Babano, STL</td>
+                                    <td>2020–present</td>
+                                </tr>
+                            </table>
+                        </aside>
+                    </article>
+    
+                    <!-- Iframe + Responsive Example -->
+                    <article class="card">
+                        <h2>2023 SMCC Alma Mater Song</h2>
+                        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
+                            <iframe style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" src="https://www.youtube.com/embed/iTYxHnYkFQQ?si=_8C0FcNRiAguJuMr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <h2>SMCC NASIPIT DOCUMENTARY 2023</h2>
+                        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
+                            <iframe style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" src="https://www.youtube.com/embed/xH5PoPJ3vzA?si=hE4B_hx6ant_qE4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+
+                    <!-- File paths + image -->
+                    <article class="card">
+                        <h2><strong>SMCC SCHOOL PICTURE</strong></h2>
+                        <div class="image-container">
+                        <img src="C:\Users\SMCC\Downloads\SMCC_IMAGE2.jpg" alt="Sample profile photo"
+                            style="max-width: 500%; border-radius: 7%; border: 2px solid #004b8d;">
+                        </div>
+                    </article>
+
+                    <article id="location" class="card">
+                        <h2><strong>SAINT MICHAEL COLLEGE OF CARAGA LOCATION</strong></h2>
+                        <div class="map-container">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13255.39927929312!2d125.33802333504798!3d8.985599321755258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1764384302068!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </article>
+    
+                    <!-- Computercode tags -->
+                    <article id="education" class="card">
+                        <h2><strong>BASIC EDUCATION</strong></h2>
+                        <hr>
+
+                        <article class="card">
+                        <h3><strong>NURSERY & KINDERGARTEN</strong></h3>
+                        <hr>
+                        <ul>
+                            <li><strong>NURSERY- 4 years old</strong></li>
+                            <li><strong>KINDERGARTEN - 5 years old</strong></li>
+                        </ul>
+                        </article>
+
+                        <article class="card">
+                        <h3><strong>ELEMENTARY</strong></h3>
+                        <hr>
+                        <ul>
+                            <il><strong>GRADE 1 TO 6</strong></il>
+                        </ul>
+
+                        <h3><stong>REQUIREMENTS</stong></h3>
+                        <h4>REGULAR STUDENT</h4>
+                        <ol>
+                            <li>FORM 138/CARD (ORIGINAL)</li>
+                            <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                            <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                            <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                            <li>BAPTISMAL CERTIFICATE(PHOTOCOPY) if applicable</li>
+                            <li>FIRST COMMUNION CERTIFICATE (PHOTOCOPY) if applicable</li>
+                            <li>LONG BROWN ENVELOPE (1)</li>
+                        </ol>
+                        <h4>TRANSFEREES STUDENT</h4>
+                        <ol>
+                            <li>FORM 138/CARD (ORIGINAL)</li>
+                            <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                            <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                            <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                            <li>BAPTISMAL CERTIFICATE(PHOTOCOPY) if applicable</li>
+                            <li>FIRST COMMUNION CERTIFICATE (PHOTOCOPY) if applicable</li>
+                            <li>LONG BROWN ENVELOPE (1)</li>
+                        </ol>
+                        </article>
+                        
+                        <artticle class="card">
+                            <h3><strong>JUNIOR HIGH SCHOOL</strong></h3>
+                            <hr>
+                            <ul>
+                                <il><strong>GRADE 7 to 10</strong></il>
+                            </ul>
+
+                            <h3><strong>REQUIREMENTS</strong></h3>
+                            <h4>REGULAR STUDENT</h4>
+                            <ol>
+                                <li>FORM 138/CARD (ORIGINAL)</li>
+                                <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                                <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                                <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                                <li>BAPTISMAL CERTIFICATE(PHOTOCOPY) if applicable</li>
+                                <li>FIRST COMMUNION CERTIFICATE (PHOTOCOPY) if applicable</li>
+                                <li>BRGY. INDIGENCY CERTIFICATE (ORIGINAL)</li>
+                                <li>LONG BROWN ENVELOPE (1)</li>
+                            </ol>
+
+                              <h4>TRANSFEREES STUDENT</h4>
+                            <ol>
+                                <li>FORM 138/CARD (ORIGINAL)</li>
+                                <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                                <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                                <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                                <li>BAPTISMAL CERTIFICATE(PHOTOCOPY) if applicable</li>
+                                <li>FIRST COMMUNION CERTIFICATE (PHOTOCOPY) if applicable</li>
+                                <li>BRGY. INDIGENCY CERTIFICATE (ORIGINAL)</li>
+                                <li>LONG BROWN ENVELOPE (1)</li>
+                            </ol>
+                        </artticle>
+
+                        <article class="card">
+                            <h3><strong>SENIOR HIGH</strong></h3>
+                            <hr>
+
+                            <h4><strong>ACADEMIC TRACK</strong></h4>
+                            <ul>
+                                <li><strong>ACOUNTANCY AND BUSINESS MANAGEMENT (ABM)</strong></li>
+                                <li><strong>HUMANITIES AND SOCIAL SCIENCE (HUMSS)</strong></li>
+                                <li><strong>SCIENCE, TECHNOLOGY, ENGINEERING AND MATHEMATICS (STEM)</strong></li>
+                                <li><strong>PRE-BACCALAUREATE MARITIME</strong></li>
+                            </ul>
+                            
+                            <h4><strong>TECHNICAL-VOCATIONAL TRACK</strong></h4>
+                            <ul>
+                                <li><strong>HOME ECONOMICS</strong></li>
+                                <ul style="list-style-type:circle;">
+                                    <li><strong>FRONT OFFICE SERVICES NC II</strong></li>
+                                    <li><strong>HOUSEKEEPING NC II</strong></li>
+                                    <li><strong>BREAD AND PASTRY PRODUCTION NC II</strong></li>
+                                    <li><strong>FOOD AND BEVERAGE SERVICES NC II</strong></li>
+                                </ul>
+                                
+                                <li><strong>INFORMATION TECHNOLOGY</strong></li>
+                                <ul style="list-style-type:circle;">
+                                    <li><strong>ANIMATION NC II</strong></li>
+                                </ul>
+                            </ul>
+
+                            <h3><strong>REQUIREMENTS</strong></h3>
+                            <h4>REGULAR STUDENT</h4>
+                            <ol>
+                                <li>FORM 138/CARD (ORIGINAL)</li>
+                                <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                                <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                                <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                                <li>BRGY. INDIGENCY CERTIFICATE (ORIGINAL)</li>
+                                <li>LONG BROWN ENVELOPE (1)</li>
+                            </ol>
+
+                            <h4>REGULAR STUDENT</h4>
+                            <ol>
+                                <li>FORM 138/CARD (ORIGINAL)</li>
+                                <li>SCHOOL FORM 10/FORM 137 (ORIGINAL)</li>
+                                <li>GOOD MORAL CERTIFICATE (ORIGINAL)</li>
+                                <li>PSA BIRTH SERTIFICATE (PHOTOCOPY)</li>
+                                <li>BRGY. INDIGENCY CERTIFICATE (ORIGINAL)</li>
+                                <li>VOUCHER CERTIFICATE if from Private School (ORIGINAL)</li>
+                                <li>LONG BROWN ENVELOPE (1)</li>
+                            </ol>
+                        </article>
+                        
+                    </article>
+    
+                    <!-- Entities, symbols, emojis, URL encoding -->
+                    <article id="symbols" class="card">
+                        <h2>5. Entities, Symbols, Emojis & URL Encoding</h2>
+                        <p>
+                            HTML <strong>entities</strong> and <strong>symbols</strong>:
+                            &copy; 2025 InfoHub &mdash; All rights reserved.  
+                            Heart symbol: &hearts;  
+                            Check symbol: &#10003; (✓)
+                        </p>
+                        <p>
+                            Emojis add expression: &#128516;&#128640;&#127793;
+                        </p>
+                        <p>
+                            Example of a URL-encoded search query:
+                        </p>
+                        <div class="code-block">
+                            <code>https://example.com/search?query=HTML%20Advanced%20Topics%21</code>
+                        </div>
+                    </article>
+    
+                    <!-- HTML vs XHTML -->
+                    <article id="xhtml" class="card">
+                        <h2>6. HTML vs XHTML</h2>
+                        <p>Below is a simple comparison of HTML and XHTML syntax:</p>
+    
+                        <div class="code-block">
+                            <pre><code>&lt;!-- HTML version (not self-closed) --&gt;
+                            &lt;img src="images/profile.jpg" alt="Profile image"&gt;
+    
+                            &lt;!-- XHTML-style version (self-closed, lowercase, quoted attributes) --&gt;
+                            &lt;img src="images/profile.jpg" alt="Profile image" /&gt;
+                            </code></pre>
+                        </div>
+    
+                        <p>
+                            XHTML is stricter and requires properly closed tags, lowercase names, and quoted attributes.
+                        </p>
+                    </article>
+    
+                </section>
+    
+                <!-- Sidebar using semantic aside -->
+                <aside class="sidebar">
+                    <h3>Quick Info Panel</h3>
+                    <p>
+                        This <code>&lt;aside&gt;</code> acts as a sidebar. It demonstrates
+                        how semantic tags improve layout and meaning.
+                    </p>
+                    <p>
+                        This page follows a simple <strong>style guide</strong>:
+                        lowercase tag names, consistent indentation, semantic elements,
+                        meaningful class and ID names, and UTF-8 charset.
+                    </p>
+                    <p>
+                        Character encoding is defined using:
+                    </p>
+                    <div class="code-block">
+                        <code>&lt;meta charset="UTF-8"&gt;</code>
+                    </div>
+                </aside>
+    
+            </div>
+    
+            <!-- Semantic footer with entities and symbols -->
+            <footer>
+                <p>
+                    Built with advanced HTML concepts &middot; InfoHub Sample &nbsp;&starf; &nbsp; &copy; 2025
+                </p>
+            </footer>
+    
+        </div>
+    </body>
+</html>
