@@ -52,6 +52,13 @@
             margin-top: 20px;  /* adjust for position */
             margin-right: -10px;
         }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between; /* pushes logo to the right */
+            align-items: flex-start;        /* keeps logo at the top */
+            margin-bottom: 10px;
+        }
 
         .elem-logo img {
             width: 100px;   /* adjust size */
@@ -490,10 +497,12 @@
                         </article>
 
                         <article class="card">
-                        <h3><strong>ELEMENTARY</strong></h3>
+                            <div class="section-header">
+                                <h3><strong>ELEMENTARY</strong></h3>
                             
-                            <div class="elem-logo">
-                                <img src="SMCC LOGO\NEW ELEMENTARY LOGO.png" alt="SMCC Logo">
+                                <div class="elem-logo">
+                                    <img src="SMCC LOGO\NEW ELEMENTARY LOGO.png" alt="SMCC Logo">
+                                </div>
                             </div>
                             
                         <hr>
@@ -854,6 +863,7 @@
     </body>
 
 </html>
+
 
 
 
