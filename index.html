@@ -349,6 +349,16 @@
             msg.style.display = "block";
         }
     }
+        function goToSection() {
+    let target = document.getElementById("educationSelect").value;
+    let section = document.getElementById(target);
+
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    } else {
+        console.log("Section not found: " + target);
+    }
+}
     </script>
 </head>
     <body id="page-root">
@@ -936,6 +946,7 @@
     </body>
 
 </html>
+
 
 
 
