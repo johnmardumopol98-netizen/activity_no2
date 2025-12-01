@@ -412,14 +412,18 @@
             <nav>
                 <a href="#layout">HOME</a>
                 <a href="#location">LOCATION</a>
-                
-                <select id="menu-select" onchange="goToSection()">
-                    <option selected disabled>-- EDUCATION --</option>
-                    <option value="nursery">Nursery & Kindergarten</option>
-                    <option value="elementary">Elementary</option>
-                    <option value="junior">Junior High</option>
-                    <option value="senior">Senior High</option>
-                </select>
+
+                <div class="container">
+                    <section class="main-section">
+                        <select id="menu-select" onchange="goToSection()">
+                            <option selected disabled>-- EDUCATION --</option>
+                            <option value="nursery">Nursery & Kindergarten</option>
+                            <option value="elementary">Elementary</option>
+                            <option value="junior">Junior High</option>
+                            <option value="senior">Senior High</option>
+                        </select>
+                    </section>
+                </div>
                 
                 <a href="#deparment">DEPARMENT</a>
                 <a href="#xhtml">HTML VS XHTML</a>
@@ -428,11 +432,6 @@
                 
             </nav>
     
-            <!-- MAIN LAYOUT AREA -->
-            <div class="container">
-    
-                <!-- Main content using section/article and divs with classes -->
-                <section class="main-section">
     
                     <!-- Layout / Div / Classes / IDs / Buttons / JS -->
                     <article id="layout" class="card">
@@ -982,6 +981,7 @@
     </body>
 
 </html>
+
 
 
 
