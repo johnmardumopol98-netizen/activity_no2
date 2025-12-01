@@ -70,6 +70,15 @@
             padding: 10px 0;
         }
 
+        .menu-select {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
         .menu ul {
             list-style: none;
             display: flex;
@@ -369,7 +378,7 @@
         }
     }
         function goToSection() {
-    let target = document.getElementById("educationSelect").value;
+    let target = document.getElementById("menu-select").value;
     let section = document.getElementById(target);
 
     if (section) {
@@ -402,7 +411,7 @@
                 <a href="#layout">HOME</a>
                 <a href="#location">LOCATION</a>
                 
-                <select id="educationSelect" onchange="goToSection()">
+                <select id="menu-select" onchange="goToSection()">
                     <option selected disabled>-- EDUCATION --</option>
                     <option value="nursery">Nursery & Kindergarten</option>
                     <option value="elementary">Elementary</option>
@@ -971,6 +980,7 @@
     </body>
 
 </html>
+
 
 
 
