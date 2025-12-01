@@ -411,19 +411,15 @@
             <!-- Semantic navigation -->
             <nav>
                 <a href="#layout">HOME</a>
-                <a href="#location">LOCATION</a>
-
-                <div class="container">
-                    <section class="main-section">
-                        <select id="menu-select" onchange="goToSection()">
-                            <option selected disabled>-- EDUCATION --</option>
-                            <option value="nursery">Nursery & Kindergarten</option>
-                            <option value="elementary">Elementary</option>
-                            <option value="junior">Junior High</option>
-                            <option value="senior">Senior High</option>
-                        </select>
-                    </section>
-                </div>
+                <a href="#location">LOCATION</a> 
+                
+                <select id="menu-select" onchange="goToSection()">
+                    <option selected disabled>-- EDUCATION --</option>
+                    <option value="nursery">Nursery & Kindergarten</option>
+                    <option value="elementary">Elementary</option>
+                    <option value="junior">Junior High</option>
+                    <option value="senior">Senior High</option>
+                </select>
                 
                 <a href="#deparment">DEPARMENT</a>
                 <a href="#xhtml">HTML VS XHTML</a>
@@ -431,7 +427,10 @@
 
                 
             </nav>
-    
+            
+            <div class="container">
+                
+                    <section class="main-section">
     
                     <!-- Layout / Div / Classes / IDs / Buttons / JS -->
                     <article id="layout" class="card">
@@ -981,6 +980,7 @@
     </body>
 
 </html>
+
 
 
 
