@@ -420,6 +420,16 @@
                     <option value="junior">Junior High</option>
                     <option value="senior">Senior High</option>
                 </select>
+
+                <select id="menu-select" onchange="goToSection()">
+                    <option selected disabled>-- DEPARTMENT --</option>
+                    <option value="cas">COLLEGE OF ARTS & SCIENCES (CAS)</option>
+                    <option value="ccis">COLLEGE OF COMPUTING AND INFORMATION SCIENCE (CCIS)</option>
+                    <option value="ccje">COLLEGE OF CRIMINAL JUSTICE EDUCATION (CCJE)</option>
+                    <option value="cte">COLLEGE OF TEACHER EDUCATION (CTE)</option>
+                    <option value="cbma">COLLEGE OF BUSINESS, MANAGEMENT, AND ACCOUNTANCY (CBMA)</option>
+                    <option value="cthm">COLLEGE OF TOURISM HOSPITALITY AND MANAGEMENT (CTHM)</option>
+                </select>
                 
                 <a href="#deparment">DEPARMENT</a>
                 <a href="#xhtml">HTML VS XHTML</a>
@@ -739,7 +749,7 @@
                     <article id="deparment" class="card">
                         <h2><strong>COLLEGE DEPARTMENT</strong></h2>
                         
-                        <article class="card">
+                        <section id="cas" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF ARTS & SCIENCE (CAS)</strong></h3>
 
@@ -752,9 +762,9 @@
                         <ul>
                             <li><strong>BACHELOR OF ARTS IN ENGLISH LANGUAGE (AB ENGLISH)</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="ccis" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF COMPUTING AND INFORMATION SCIENCE (CCIS)</strong></h3>
 
@@ -771,9 +781,9 @@
                             <li><strong>BACHELOR OF SCIENCE IN INFORMATION STSYEMS(BSIS)</strong></li>
                             <li><strong>DIMPLOMA IN INFORMATION TECHNOLOGY (DIT)</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="ccje" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF CRIMINAL JUSTICE EDUCATION (CCJE)</strong></h3>
 
@@ -786,9 +796,9 @@
                         <ul>
                             <li><strong>BACHELOR OF SCIENCE IN CRIMINOLOGY (BSCRIM)</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="cte" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF TEACHER EDUCATION (CTE)</strong></h3>
 
@@ -812,9 +822,9 @@
                             <li><strong>BACHELOR OF PHYSICAL EDUCATION (BPED)</strong></li>
                             <li><strong>BACHELOR OF TECHNICAL VOCATIONAL TEACHER EDUCATION (BTVTED)</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="cbma" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF BUSINESS, MANAGEMENT, AND ACCOUNTACY (CBMA)</strong></h3>
 
@@ -837,9 +847,9 @@
                             <li><strong>BACHELOR OF SCIENCE IN ENTRENEURSHIP (BSE)</strong></li>
                             <li><strong>BACHELOR OF SCIENCE IN ACCOUNTING INFORMATION SYSTEM (BSAIS)</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="cthm" class="card">
                             <div class="section-header">
                                 <h3><strong>COLLEGE OF TOURISM HOSPITALITY AND MANAGEMENT (CTHM)</strong></h3>
                                 
@@ -858,7 +868,7 @@
                             <li><strong>HOUSEKEEPING NC II</strong></li>
                             <li><strong>SHIP'S CATERING SEVERING NC II</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
                         <h3><stong>REQUIREMENTS</stong></h3>
                         <h4>REGULAR STUDENT</h4>
@@ -980,6 +990,7 @@
     </body>
 
 </html>
+
 
 
 
