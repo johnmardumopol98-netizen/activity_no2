@@ -389,6 +389,16 @@
         console.log("Section not found: " + target);
     }
 }
+        function Section() {
+    let target = document.getElementById("menuselect").value;
+    let section = document.getElementById(target);
+
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    } else {
+        console.log("Section not found: " + target);
+    }
+}
     </script>
 </head>
     <body id="page-root">
@@ -421,7 +431,7 @@
                     <option value="senior">Senior High</option>
                 </select>
 
-                <select id="menu-select" onchange="goToSection()">
+                <select id="menuselect" onchange="Section()">
                     <option selected disabled>-- DEPARTMENT --</option>
                     <option value="cas">COLLEGE OF ARTS & SCIENCES (CAS)</option>
                     <option value="ccis">COLLEGE OF COMPUTING AND INFORMATION SCIENCE (CCIS)</option>
@@ -990,6 +1000,7 @@
     </body>
 
 </html>
+
 
 
 
