@@ -44,6 +44,43 @@
             width: 80px;      /* adjust size */
             height: auto;
         }
+
+        /* NAVIGATION MENU */
+        .menu {
+            background-color: #0b5fa8;
+            padding: 10px 0;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .menu ul li a:hover {
+            border-bottom: 3px solid white;
+            padding-bottom: 3px;
+        }
+
+        /* CONTENT SECTIONS */
+        .content-section {
+            background: white;
+            padding: 30px;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
         
         .section-header {
             display: flex;
@@ -335,6 +372,14 @@
                 <a href="#deparment">DEPARMENT</a>
                 <a href="#xhtml">HTML VS XHTML</a>
                 <a href="#link">LINKS & REFENRENCES</a>
+
+                <select id="educationSelect" onchange="goToSection()">
+                    <option selected disabled>-- EDUCATION --</option>
+                    <option value="nursery">Nursery & Kindergarten</option>
+                    <option value="elementary">Elementary</option>
+                    <option value="junior">Junior High</option>
+                    <option value="senior">Senior High</option>
+                </select>
             </nav>
     
             <!-- MAIN LAYOUT AREA -->
@@ -495,20 +540,20 @@
                     </article>
     
                     <!-- Computercode tags -->
-                    <article id="education" class="card">
+                    <article class="card">
                         <h2><strong>BASIC EDUCATION</strong></h2>
                         <hr>
 
-                        <article class="card">
+                        <section id="nursery" class="card">
                         <h3><strong>NURSERY & KINDERGARTEN</strong></h3>
                         <hr>
                         <ul>
                             <li><strong>NURSERY- 4 years old</strong></li>
                             <li><strong>KINDERGARTEN - 5 years old</strong></li>
                         </ul>
-                        </article>
+                        </section>
 
-                        <article class="card">
+                        <section id="elementary" class="card">
                             <div class="section-header">
                                 <h3><strong>ELEMENTARY</strong></h3>
                             
@@ -544,9 +589,9 @@
                             <li>FIRST COMMUNION CERTIFICATE (PHOTOCOPY) if applicable</li>
                             <li>LONG BROWN ENVELOPE (1)</li>
                         </ol>
-                        </article>
+                        </section>
                         
-                        <artticle class="card">
+                        <section id="junior" class="card">
                             <div class="section-header">
                                 <h3><strong>JUNIOR HIGH SCHOOL</strong></h3>
                             
@@ -584,9 +629,9 @@
                                 <li>BRGY. INDIGENCY CERTIFICATE (ORIGINAL)</li>
                                 <li>LONG BROWN ENVELOPE (1)</li>
                             </ol>
-                        </artticle>
+                        </sectiom>
 
-                        <article class="card">
+                        <section id="senior" class="card">
                             <div class="section-header">
                                 <h3><strong>SENIOR HIGH</strong></h3>
                             
@@ -642,7 +687,7 @@
                                 <li>VOUCHER CERTIFICATE if from Private School (ORIGINAL)</li>
                                 <li>LONG BROWN ENVELOPE (1)</li>
                             </ol>
-                        </article>
+                        </section>
                         
                     </article>
     
@@ -891,6 +936,7 @@
     </body>
 
 </html>
+
 
 
 
